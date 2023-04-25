@@ -8,7 +8,7 @@ import Button from '@components/Button';
 
 import styles from '@styles/Home.module.scss';
 
-const DEFAULT_CENTER = [38.907132, -77.036546]
+const DEFAULT_CENTER = [42.723301 , -84.481667]
 
 export default function Home() {
   return (
@@ -22,10 +22,10 @@ export default function Home() {
       <Section>
         <Container>
           <h1 className={styles.title}>
-            Next.js Leaflet Starter
+            MSU Smash Ultimate Data
           </h1>
 
-          <Map className={styles.homeMap} width="800" height="400" center={DEFAULT_CENTER} zoom={12}>
+          <Map className={styles.homeMap} width="400" height="200" center={DEFAULT_CENTER} zoom={16}>
             {({ TileLayer, Marker, Popup }) => (
               <>
                 <TileLayer
@@ -42,11 +42,14 @@ export default function Home() {
           </Map>
 
           <p className={styles.description}>
-            <code className={styles.code}>yarn create next-app -e https://github.com/colbyfayock/next-leaflet-starter</code>
+          <code className={styles.code}>Communication Arts and Science Building - Room 154</code>
+          </p>
+
+          <p className={styles.description}>
+          <code className={styles.code}>404 Wilson Rd, East Lansing, MI 48824</code>
           </p>
 
           <p className={styles.view}>
-            <Button href="https://github.com/colbyfayock/next-leaflet-starter">Vew on GitHub</Button>
           </p>
         </Container>
       </Section>
